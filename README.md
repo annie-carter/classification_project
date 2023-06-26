@@ -88,23 +88,24 @@ There were 25 columns in the initial data and 29 columns after preparation; the 
    After selecting four features and creating data visualizations, I chose the features that displayed visual significance and had a more significant relationship in chi-square statistical testing to train the Classification Model. The Logistic Regression model was my best model for the prediction of my target value, churn, because there was a consistent accuracy of 80% on the train, validate, and test sets; this model outperformed my baseline score of 73.56% 
 
 Hypothesis 1  
-    • Ha= Contract type is dependent on customer churn 
-    • Outcome: we rejected the Null Hypothesis. 
-    • But the relationship is fair of 710 out of 4225. It can be used in modeling.
+* Ha= Contract type is dependent on customer churn 
+* Outcome: We rejected the Null Hypothesis. 
+* But the relationship is fair of 710 out of 4225. It can be used in modeling.
 
 Hypothesis 2  
-    • Ha = Data protection is dependent on customer churn
-    • Outcome: #we rejected the Null Hypothesis.
-    • But the relationship is extremely low, of 17 out of 4225. This will not be used in modeling. 
+* Ha = Data protection is dependent on customer churn
+* Outcome: We rejected the Null Hypothesis.
+* But the relationship is extremely low, of 17 out of 4225. This will not be used in modeling. 
+
 Hypothesis 3  
-    • Ha = Streaming_movies is dependent on customer churn
-    • Outcome: #we rejected the Null Hypothesis.
-    • But the relationship is extremely low of 15 out of 4225. This will not be used in modeling.  
+* Ha = Streaming_movies is dependent on customer churn
+* Outcome: We rejected the Null Hypothesis.
+* But the relationship is extremely low of 15 out of 4225. This will not be used in modeling.  
 
 Hypothesis 4  
-    • Ha = Tech support is dependent on customer churn  
-    • Outcome: We reject the Null Hypothesis.
-    • But the relationship is weak at 110 to 4225. *Used for modeling to satisfy rubric requirements
+* Ha = Tech support is dependent on customer churn  
+* Outcome: We reject the Null Hypothesis.
+* But the relationship is weak at 110 to 4225. *Used for modeling to satisfy rubric requirements
  
     
     
