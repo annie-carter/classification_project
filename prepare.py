@@ -14,22 +14,18 @@ from sklearn.metrics import confusion_matrix
 
 
 
-#prepare telco data
+#prepare telco data, create dummy varible and concat the tables
 def prep_telco(df):
     df_telco = acquire.get_telco_data(df)
-    df_telco.drop(columns=['internet_service_type_id', 'payment_type_id', 'Unnamed: 0'], inplace=True)
-    
+    df_telco.drop(columns=['internet_service_type_id', 'payment_type_id', 'Unnamed: 0'], inplace=True) 
     dummy_df_telco = pd.get_dummies(df_telco[['partner', 'dependents', 'phone_service', 'multiple_lines', 'online_security', 'online_backup', 'device_protection', 'tech_support', 'streaming_tv', 'streaming_movies', 'paperless_billing', 'churn', 'internet_service_type', 'gender']], dummy_na=False, drop_first=True)
     
-    # Create a dummy variable column for contract_type
     ct_df = pd.DataFrame({'contract_type': df_telco['contract_type']})
     ct_df['contract_type_Yes'] = ct_df['contract_type'].apply(lambda x: 0 if x == 'Month-to-month' else 1)
     
     df_telco = pd.concat([df_telco, dummy_df_telco, ct_df], axis=1)
-    df_telco.drop(columns=['partner', 'dependents', 'phone_service', 'multiple_lines', 'online_security', 'online_backup', 'device_protection', 'tech_support', 'streaming_tv', 'streaming_movies', 'paperless_billing', 'churn', 'internet_service_type', 'gender', 'contract_type_id'], inplace=True)
-    
-    df_telco.total_charges = df_telco.total_charges.str.replace(' ', '0').astype('float')
-    
+    df_telco.drop(columns=['partner', 'dependents', 'phone_service', 'multiple_lines', 'online_security', 'online_backup', 'device_protection', 'tech_support', 'streaming_tv', 'streaming_movies', 'paperless_billing', 'churn', 'internet_service_type', 'gender', 'contract_type_id'], inplace=True)  
+    df_telco.total_charges = df_telco.total_charges.str.replace(' ', '0').astype('float')  
     return df_telco
 
 def split_telco(df):
