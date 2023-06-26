@@ -53,12 +53,12 @@ There were 25 columns in the initial data and 29 columns after preparation; the 
 | churn_Yes  | 7043 non-null: object |  0 or 1 (boolean)   |
 
 
-|        Feature          |       Datatype        |            Definition             |
-|-------------------------|-----------------------|-----------------------------------|
-|contract type 	          |7043 non-null: object  |Month-to-month, One year, Two year |
-|device_protection_Yes	  |7043 non-null: uint8   |0 or 1 (boolean)                   |
-|streaming_tv_Yes	      |7043 non-null: uint8   |0 or 1 (boolean)                   |
-|tech_support_Yes	      |7043 non-null: uint8   |0 or 1 (boolean)                   |
+|        Feature          |       Datatype        |     Definition        |
+|-------------------------|-----------------------|-----------------------|
+|contract type_Yes 	      |7043 non-null: object  |0 or 1 (boolean)       |
+|device_protection_Yes	  |7043 non-null: uint8   |0 or 1 (boolean)       |
+|streaming_tv_Yes	      |7043 non-null: uint8   |0 or 1 (boolean)       |
+|tech_support_Yes	      |7043 non-null: uint8   |0 or 1 (boolean)       |
 
 
 ## Project Planning
