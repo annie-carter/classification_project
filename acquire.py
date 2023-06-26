@@ -25,18 +25,14 @@ def get_telco_data(df):
         # Return the dataframe to the calling code
         return df
     
-    def get_telco_data_with_date(df):
-        filename = "telcowdate.csv"
-        if os.path.isfile(filename):
-            return pd.read_csv(filename)
-        else:
-        # read the SQL  datafra
-            df = pd.read_sql('''SELECT * 
-                         FROM customers 
-                         JOIN customer_signups USING (customer_id)''', get_connection('telco_churn'))
-
-        # Write that dataframe to disk for later. Called "caching" the data for later.
-            df.to_csv(filename,index=False)
-
-        # Return the dataframe to the calling code
-            return df  
+def telco_data_acquire(telco_df):
+    print(telco_df.info())
+    print('                        ')
+    print(telco_df.describe())
+    print('                        ')
+    print(telco_df.describe(include='object').T)
+    print('                        ')
+    print('The telco data used for this project has', telco_df.shape[0], 'rows and', telco_df.shape[1], 'columns')
+    print('                        ')
+    print('This was the initial exploration of acquired data')
+    return telco_df
