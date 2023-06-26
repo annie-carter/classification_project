@@ -5,7 +5,7 @@
 This project determines factors contributing to customer churn for the TELCO company. The data collected from this project can help with future planning on ways to decrease customer churn and improve loyalty to the TELCO brand.
 
 ## Project Goals
-1. This project goal is to identify factors that have a significant relationship to customers at a higher risk of churn, construct a classification model that accurately predicts factors for customer churn, and present findings to lead data scientists and other TELCO stakeholders
+    This project goal is to identify factors that have a significant relationship to customers at a higher risk of churn, construct a classification model that accurately predicts factors for customer churn, and present findings to lead data scientists and other TELCO stakeholders
 
 ## Initial Questions 
 1. Does contract type have a significant relationship to customer churn?
@@ -16,45 +16,44 @@ This project determines factors contributing to customer churn for the TELCO com
 
 ## Initial Hypotheses 
 Hypothesis 1 
-    • alpha = .05 
-    • H0= Contract type is independent of customer churn 
-    • Ha= Contract type is dependent on customer churn 
-    • Outcome: #we rejected the Null Hypothesis. 
+    * alpha = .05 
+    * H0= Contract type is independent of customer churn 
+    * Ha= Contract type is dependent on customer churn 
+    * Outcome: #we rejected the Null Hypothesis. 
 Hypothesis 2 
-    • alpha = .05 
-    • H0 = Data protection is independent of customer churn  
-    • Ha = Data protection is dependent on customer churn
-    • Outcome: #we rejected the Null Hypothesis.
+    * alpha = .05 
+    * H0 = Data protection is independent of customer churn  
+    * Ha = Data protection is dependent on customer churn
+    * Outcome: #we rejected the Null Hypothesis.
     
 Hypothesis 3 
-    • alpha = .05 
-    • H0 = Streaming_movies is independent of customer churn  
-    • Ha = Streaming_movies is dependent on customer churn
-    • Outcome: #we or reject the Null Hypothesis.
+    * alpha = .05 
+    * H0 = Streaming_movies is independent of customer churn  
+    * Ha = Streaming_movies is dependent on customer churn
+    * Outcome: #we or reject the Null Hypothesis.
 
 Hypothesis 4 
-    • alpha = .05 
-    • H0 = Tech support is independent of customer churn 
-    • Ha = Tech support is dependent on customer churn  
-    • Outcome: We reject the Null Hypothesis.
+    * alpha = .05 
+    * H0 = Tech support is independent of customer churn 
+    * Ha = Tech support is dependent on customer churn  
+    * Outcome: We reject the Null Hypothesis.
 
 
 ## Data Dictionary
 
 There were 25 columns in the initial data and 29 columns after preparation; the central target column will be: 
 
-| Target     |       Datatype        |    Definition      |
-|------------|-----------------------|:------------------:|
-| churn_Yes  | 7043 non-null: object |  0 or 1 (boolean)           |
+|   Targee    |       Datatype        |    Definition      |
+|------------|-----------------------|:------------------: |
+| churn_Yes  | 7043 non-null: object |  0 or 1 (boolean)   |
 
 
-| Feature                 |       Datatype        |    Definition            |
-|-------------------------|-----------------------|--------------------------|
-|contract type 	          |7043 non-null: object  |Month-to-month, One year, |
-|                         |                       |Two year                  |
-|device_protection_Yes	  |7043 non-null: uint8   |0 or 1 (boolean)          |
-|streaming_tv_Yes	      |7043 non-null: uint8   |0 or 1 (boolean)          |
-|tech_support_Yes	      |7043 non-null: uint8   |0 or 1 (boolean)          |
+|        Feature          |       Datatype        |            Definition             |
+|-------------------------|-----------------------|-----------------------------------|
+|contract type 	          |7043 non-null: object  |Month-to-month, One year, Two year |
+|device_protection_Yes	  |7043 non-null: uint8   |0 or 1 (boolean)                   |
+|streaming_tv_Yes	      |7043 non-null: uint8   |0 or 1 (boolean)                   |
+|tech_support_Yes	      |7043 non-null: uint8   |0 or 1 (boolean)                   |
 
 
 ## Project Planning 
